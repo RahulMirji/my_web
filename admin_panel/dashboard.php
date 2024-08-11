@@ -20,7 +20,7 @@ include('../db.php'); // Include database connection
     /* Dashboard Container */
     .dashboard-container {
     max-width: 1200px;
-    margin: 70px auto;
+    margin: 110px auto;
     padding: 40px;
     background-color: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);

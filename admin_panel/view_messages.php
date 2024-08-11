@@ -127,6 +127,16 @@ include('../db.php'); // Include database connection
             font-style: italic;
             color: #666;
         }
+        /* Back Home Button */
+        .back-home {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            background-color: #333;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
 
         /* Responsive Design */
         @media (max-width: 768px) {
@@ -241,7 +251,13 @@ include('../db.php'); // Include database connection
         </table>
     </section>
     </div>
-    <br>
+    <div style="margin-bottom: 40px;">
+    <center>
+        <button>
+            <a href="dashboard.php" class="back-home">Back Home</a>
+        </button>
+    </center>
+    </div>
     <footer>
         <?php include "../user_panel/footer.php"; ?>
     </footer>

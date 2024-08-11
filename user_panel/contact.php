@@ -147,18 +147,14 @@ button[type="submit"]:hover {
     background-color: #333;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    margin-bottom: 30px; 
 }
 
-.back-home:hover {
-    background-color: #491af4;
-}
 
 .logo,h1,h5{
     color: #fff;
     
 }
-
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -218,10 +214,12 @@ button[type="submit"]:hover {
             <button type="submit" name="send">Send Message</button>
         </form>
     </section>
-    <div>
-        <center>
-       <button> <a href="index.php" class="back-home">Back Home</a></button>
-        </center>
+    <div style="margin-bottom: 30px;">
+    <center>
+        <button>
+            <a href="index.php" class="back-home">Back Home</a>
+        </button>
+    </center>
     </div>
     <footer>
         <?php
