@@ -46,7 +46,7 @@ body {
     color: #333;
 }
 
-/* Section Stylessssssssssssssssssssssss */
+/* Section style by rahul */
 #contact {
     background-color: #fff;
     padding: 50px 20px;
