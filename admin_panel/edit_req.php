@@ -6,7 +6,7 @@ if (!isset($_SESSION['admin'])) {
 }
 
 include('../db.php'); // Include database connection
-
+include "nav.php";
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
@@ -30,7 +30,6 @@ if (isset($_GET['id'])) {
 }
 
 if (isset($_POST['update'])) {
-    echo "Form submitted"; // Check if the form submission is detected
     $id = $_POST['id'];
     $full_name = $_POST['full_name'];
     $email = $_POST['email'];
@@ -40,29 +39,24 @@ if (isset($_POST['update'])) {
     $discription = $_POST['discription'];
     $deadline = $_POST['deadline'];
 
-    // Check if values are being received correctly
-    echo "ID: $id, Full Name: $full_name, Email: $email, Phone: $phone_no, Web Type: $web_type, Budget: $budget, Description: $discription, Deadline: $deadline";
-
+    // Update the record in the database
     $query = "UPDATE cust_req SET full_name='$full_name', email='$email', phone_no='$phone_no', web_type='$web_type', budget='$budget', discription='$discription', deadline='$deadline' WHERE id=$id";
     
     if (mysqli_query($conn, $query)) {
-        echo "Record updated successfully";
-        header("Location: admin_panel.php");
+        // Redirect back to the admin panel
+        echo '<script> alert("Updated Successfully."); window.location.href = "view_messages.php";</script>';
+        exit(); // Ensure script stops after redirection
     } else {
         echo "Error updating record: " . mysqli_error($conn);
     }
 }
-
-
-<!DOCTYPE html>
-<html lang="en">
+?>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Customer Requirement</title>
-    <?php 
-    include "nav.php";
-    ?>
+
 <style>
 /* General Styles */
 body {
@@ -73,8 +67,8 @@ body {
 }
 
 .container {
-    max-width: 600px; /* Set a max-width for the form container */
-    margin: 50px auto; /* Center the container and add space at the top and bottom */
+    max-width: 800px; /* Set a max-width for the form container */
+    margin: 60px auto; /* Center the container and add space at the top and bottom */
     padding: 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -103,6 +97,7 @@ label {
 input[type="text"],
 input[type="email"],
 input[type="date"],
+input[type="website_type"],
 textarea {
     padding: 10px;
     margin-bottom: 15px; /* Reduced margin for better spacing */
@@ -167,8 +162,15 @@ button[type="submit"]:hover {
             <label for="phone_no">Phone Number:</label>
             <input type="text" name="phone_no" value="<?php echo $phone_no; ?>" required><br>
 
-            <label for="web_type">Website Type:</label>
-            <input type="text" name="web_type" value="<?php echo $web_type; ?>" required><br>
+            <label for="website_type">Type of Website:</label>
+            <select id="website_type" name="web_type" required>
+            <option value="personal" <?php if ($web_type == 'personal') echo 'selected'; ?>>Personal Website</option>
+            <option value="business" <?php if ($web_type == 'business') echo 'selected'; ?>>Business Website</option>
+            <option value="ecommerce" <?php if ($web_type == 'ecommerce') echo 'selected'; ?>>E-commerce Website</option>
+            <option value="blog" <?php if ($web_type == 'blog') echo 'selected'; ?>>Blog</option>
+            <option value="portfolio" <?php if ($web_type == 'portfolio') echo 'selected'; ?>>Portfolio</option>
+            <option value="other" <?php if ($web_type == 'other') echo 'selected'; ?>>Other</option>
+            </select>
 
             <label for="budget">Budget:</label>
             <input type="text" name="budget" value="<?php echo $budget; ?>" required><br>
@@ -183,9 +185,7 @@ button[type="submit"]:hover {
         </form>
     </div>
     <footer>
-        <?php
-        include "../user_panel/footer.php";
-        ?>
+        <?php include "../user_panel/footer.php"; ?>
     </footer>
 </body>
 </html>

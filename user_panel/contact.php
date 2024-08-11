@@ -158,14 +158,7 @@ button[type="submit"]:hover {
     
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #333;
-    color: #fff;
-    margin-top: 40px;
-}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

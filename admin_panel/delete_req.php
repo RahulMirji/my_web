@@ -13,7 +13,8 @@ if (isset($_GET['id'])) {
     // Delete the record from the database
     $query = "DELETE FROM cust_req WHERE id = $id";
     if (mysqli_query($conn, $query)) {
-        header("Location: admin_panel.php"); // Redirect back to the admin panel
+        echo '<script>alert("Deleted Successfully.");window.location.href = "view_messages.php";</script>';
+ // Redirect back to the admin panel
     } else {
         echo "Error deleting record: " . mysqli_error($conn);
     }
