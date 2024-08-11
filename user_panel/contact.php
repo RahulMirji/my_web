@@ -46,7 +46,7 @@ body {
     color: #333;
 }
 
-/* Section style by rahul MIRJI */
+/* Section styles */
 #contact {
     background-color: #fff;
     padding: 50px 20px;
