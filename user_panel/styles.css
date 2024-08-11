@@ -1,0 +1,28 @@
+/* Reset and global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: none;
+}
+
+body {
+    color: #fff; 
+    font-size: 16px;
+    line-height: 1.5;
+    background-image: url('Images/background.jpg'); /* Corrected the spelling from 'backround.jpg' to 'background.jpg' */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
+
+/* Container for centering content */
+.container {
+    width: 81%;
+    margin: 0 auto;
+    padding-top: 50px; /* Extra padding to account for fixed nav */
+}
+
+
