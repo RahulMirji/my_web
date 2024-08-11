@@ -220,14 +220,7 @@
         }
 
         /* Card section styles */
-        .section-title {
-            text-align: center;
-            font-size: 2.5em;
-            color: blue; /* Bright color to make it stand out */
-            margin-bottom: 40px;
-            text-shadow: 2px 1px 2px red; /* Soft shadow for depth */
-        }
-
+        /* Second Section Starts here*/
         .card-container {
             display: flex;
             justify-content: center; /* Center the cards horizontally */
@@ -317,6 +310,48 @@
             color: white;
             font-family: courier, sans;
         }
+        /* heading for second section starts here*/
+        .section-title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: red;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .section-title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -10px;
+            height: 4px;
+            background: #ffffff;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            animation: underline 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes underline {
+            to {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
     </style>
     <?php include 'nav.php'; ?>
 </head>
@@ -339,6 +374,7 @@
     </div>
 </header>
 <!-- Second section begins here -->
+ <div>
 <h1 class="section-title">Let's Walk through our Ideas</h1>
 
 <div class="card-container">
@@ -369,6 +405,7 @@
             <div class="go-arrow">→</div>
         </div>
     </div>
+</div>
 </div>
 <?php include "footer.php"; ?>
 </body>
