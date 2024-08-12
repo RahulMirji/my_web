@@ -1,3 +1,4 @@
+<?php include 'nav.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Designer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+
     <style>
         /* General styles */
         * {
@@ -36,7 +38,7 @@
             padding: 60px;
             background: #fff;
             border-radius: 10px;
-            box-shadow: 10px 9px 10px orange;
+            box-shadow: 10px 9px 10px black;
             animation: fadeIn 2s ease-in-out;
         }
 
@@ -110,114 +112,21 @@
         .btn.secondary:hover {
             background-color: #d00d0d;
         }
-
-        /* Loader Styles */
-        .loader {
-            position: absolute;
-            top: 50%;
-            left: 70%;
-            z-index: 10;
-            width: 220px;
-            height: 124px;
-            margin-left: -80px;
-            margin-top: -50px;
-            border-radius: 5px;
-            background: #1e3f57;
-            animation: dot1_ 4s cubic-bezier(0.55,0.3,0.24,0.99) infinite;
+        .video-container {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        max-width: 70%;
+        border-radius: 30px;
         }
 
-        .loader:nth-child(2) {
-            z-index: 11;
-            width: 150px;
-            height: 90px;
-            margin-top: -45px;
-            margin-left: -75px;
-            border-radius: 3px;
-            background: #3c517d;
-            animation-name: dot2_;
+        .video-container video {
+        max-width: 70%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
         }
 
-        .loader:nth-child(3) {
-            z-index: 12;
-            width: 40px;
-            height: 20px;
-            margin-top: 50px;
-            margin-left: -20px;
-            border-radius: 0 0 5px 5px;
-            background: #6bb2cd;
-            animation-name: dot3_;
-        }
-
-        @keyframes dot1_ {
-            3%,97% {
-                width: 160px;
-                height: 100px;
-                margin-top: -50px;
-                margin-left: -80px;
-            }
-
-            30%,36% {
-                width: 80px;
-                height: 120px;
-                margin-top: -60px;
-                margin-left: -40px;
-            }
-
-            63%,69% {
-                width: 40px;
-                height: 80px;
-                margin-top: -40px;
-                margin-left: -20px;
-            }
-        }
-
-        @keyframes dot2_ {
-            3%,97% {
-                height: 90px;
-                width: 150px;
-                margin-left: -75px;
-                margin-top: -45px;
-            }
-
-            30%,36% {
-                width: 70px;
-                height: 96px;
-                margin-left: -35px;
-                margin-top: -48px;
-            }
-
-            63%,69% {
-                width: 32px;
-                height: 60px;
-                margin-left: -16px;
-                margin-top: -30px;
-            }
-        }
-
-        @keyframes dot3_ {
-            3%,97% {
-                height: 20px;
-                width: 40px;
-                margin-left: -20px;
-                margin-top: 50px;
-            }
-
-            30%,36% {
-                width: 8px;
-                height: 8px;
-                margin-left: -5px;
-                margin-top: 49px;
-                border-radius: 8px;
-            }
-
-            63%,69% {
-                width: 16px;
-                height: 4px;
-                margin-left: -8px;
-                margin-top: -37px;
-                border-radius: 10px;
-            }
-        }
 
         /* Card section styles */
         /* Second Section Starts here*/
@@ -244,6 +153,7 @@
             overflow: hidden;
             background: linear-gradient(to bottom, #c3e6ec, #a7d1d9);
             font-family: Arial, Helvetica, sans-serif;
+            box-shadow: 9px 9px 9px black;
         }
 
         .card:before {
@@ -319,7 +229,7 @@
             letter-spacing: 0.1em;
             text-align: center;
             position: relative;
-            animation: fadeIn 2s ease-in-out;
+            animation: fadeIn 9s ease-in-out;
         }
 
         .section-title::before {
@@ -332,7 +242,7 @@
             background: #ffffff;
             transform: scaleX(0);
             transform-origin: bottom right;
-            animation: underline 1s ease-in-out;
+            animation: underline 9s ease-in-out;
         }
 
         @keyframes fadeIn {
@@ -352,11 +262,82 @@
                 transform-origin: bottom left;
             }
         }
+        /* The Styles for blog section starts here*/
+        .blog-preview-section {
+        padding: 50px 0;
+        background-color: #f9f9f9;
+        text-align: center;
+        }
+
+        .section-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 40px;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        }
+
+        .blog-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        }
+
+        .blog-box {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        background-color: #fff;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 7px 4px 7px black;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+        }
+
+        .blog-box:hover img {
+        transform: scale(1.1);
+        }
+
+        .blog-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        text-align: left;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        }
+
+        .blog-box:hover .blog-content {
+        opacity: 1;
+        }
+
+        .blog-content h3 {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        }
+
+       .blog-content p {
+       font-size: 1rem;
+       line-height: 1.5;
+       }
+
     </style>
-    <?php include 'nav.php'; ?>
 </head>
 <body>
-<header>
+<section>
     <div class="header-container">
         <div class="header-content">
             <h1>Websites Done Right</h1>
@@ -366,15 +347,12 @@
                 <a href="#" class="btn secondary">I'm looking to hire <span>&#10145;</span></a>
             </div>
         </div>
-        <div class="container">
-            <div class="loader"></div>
-            <div class="loader"></div>
-            <div class="loader"></div>
+        <div class="video-container">
+        <video src="Images/web aimation.mp4" autoplay muted loop></video>
         </div>
-    </div>
-</header>
+
+</section>
 <!-- Second section begins here -->
- <div>
 <h1 class="section-title">Let's Walk through our Ideas</h1>
 
 <div class="card-container">
@@ -405,8 +383,78 @@
             <div class="go-arrow">→</div>
         </div>
     </div>
+  </div>
+
+<!-- The Blog Preview  section starts here-->
+<div>
+<div class="blog-preview-section">
+    <h2 class="section-title">Recent Blogs</h2>
+    <div class="blog-container">
+        <div class="blog-box">
+            <img src="Blog Image/img1.jpg" alt="Blog 1">
+            <div class="blog-content">
+                <h3>Blog Title 1</h3>
+                <p>Short description of the blog post...</p>
+            </div>
+        </div>
+        <div class="blog-box">
+            <img src="Blog Image/img2.jpg" alt="Blog 2">
+            <div class="blog-content">
+                <h3>Blog Title 2</h3>
+                <p>Short description of the blog post...</p>
+            </div>
+        </div>
+        <div class="blog-box">
+            <img src="Blog Image/img3.jpg" alt="Blog 3">
+            <div class="blog-content">
+                <h3>Blog Title 3</h3>
+                <p>Short description of the blog post...</p>
+            </div>
+        </div>
+        <div class="blog-box">
+            <img src="Blog Image/img4.jpg" alt="Blog 4">
+            <div class="blog-content">
+                <h3>Blog Title 4</h3>
+                <p>Short description of the blog post...</p>
+            </div>
+        </div>
+        <div class="blog-box">
+            <img src="Blog Image/img5.jpg" alt="Blog 5">
+            <div class="blog-content">
+                <h3>Blog Title 5</h3>
+                <p>Short description of the blog post...</p>
+            </div>
+        </div>
+        <div class="blog-box">
+            <img src="Blog Image/img6.jpg" alt="Blog 6">
+            <div class="blog-content">
+                <h3>Blog Title 6</h3>
+                <p>Short description of the blog post...</p>
+            </div>
+        </div>
+        <div class="blog-box">
+            <img src="Blog Image/img7.jpg" alt="Blog 6">
+            <div class="blog-content">
+                <h3>Blog Title 7</h3>
+                <p>Short description of the blog post...</p>
+            </div>
+        </div>
+        <div class="blog-box">
+            <img src="Blog Image/img8.jpg" alt="Blog 6">
+            <div class="blog-content">
+                <h3>Blog Title 8</h3>
+                <p>Short description of the blog post...</p>
+            </div>
+        </div>
+        <div class="blog-box">
+            <img src="Blog Image/img9.jpg" alt="Blog 9">
+            <div class="blog-content">
+                <h3>Blog Title 9</h3>
+                <p>Short description of the blog post...</p>
+            </div>
+        </div>
+    </div>
 </div>
-</div>
-<?php include "footer.php"; ?>
 </body>
+<?php include "footer.php"; ?>
 </html>
