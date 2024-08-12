@@ -262,77 +262,80 @@
                 transform-origin: bottom left;
             }
         }
-        /* The Styles for blog section starts here*/
-        .blog-preview-section {
-        padding: 50px 0;
-        background-color: #f9f9f9;
-        text-align: center;
+         /* The Styles for blog section starts here */
+         .blog-preview-section {
+            padding: 50px 0;
+            background-color: #f9f9f9;
+            text-align: center;
         }
 
         .section-title {
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin-bottom: 40px;
-        color: #333;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 40px;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
 
         .blog-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Create 3 columns */
+            grid-gap: 20px; /* Space between grid items */
+            justify-content: center;
+            padding: 40px 40px;
+            margin: 0 40px;
         }
 
         .blog-box {
-        position: relative;
-        width: 300px;
-        height: 200px;
-        background-color: #fff;
-        overflow: hidden;
-        border-radius: 10px;
-        box-shadow: 7px 4px 7px black;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            width: 85%; /* Ensure boxes take full width of their grid cell */
+            height: 200px;
+            background-color: #fff;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 7px 4px 7px black;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .blog-box img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.3s ease;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .blog-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 5px 7px 25px black;
         }
 
         .blog-box:hover img {
-        transform: scale(1.1);
+            transform: scale(1.1);
         }
 
         .blog-content {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 20px;
-        background: rgba(0, 0, 0, 0.6);
-        color: #fff;
-        text-align: left;
-        opacity: 0;
-        transition: opacity 0.3s ease;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px;
+            text-align: left;
+            transition: background-color 0.3s ease;
         }
 
-        .blog-box:hover .blog-content {
-        opacity: 1;
+        .blog-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
 
-        .blog-content h3 {
-        margin-bottom: 10px;
-        font-size: 1.5rem;
+        .blog-excerpt {
+            font-size: 1rem;
+            line-height: 1.4;
         }
-
-       .blog-content p {
-       font-size: 1rem;
-       line-height: 1.5;
-       }
 
     </style>
 </head>
@@ -385,76 +388,75 @@
     </div>
   </div>
 
-<!-- The Blog Preview  section starts here-->
-<div>
-<div class="blog-preview-section">
-    <h2 class="section-title">Recent Blogs</h2>
-    <div class="blog-container">
-        <div class="blog-box">
-            <img src="Blog Image/img1.jpg" alt="Blog 1">
-            <div class="blog-content">
-                <h3>Blog Title 1</h3>
-                <p>Short description of the blog post...</p>
+ <!-- Blog Preview Section -->
+ <section class="blog-preview-section">
+            <h2 class="section-title">Latest Blogs</h2>
+            <div class="blog-container">
+                <div class="blog-box">
+                    <img src="Blog Image/img9.jpg" alt="Blog 1">
+                    <div class="blog-content">
+                        <h3 class="blog-title">Blog Post 1</h3>
+                        <p class="blog-excerpt">This is a short description or excerpt for blog post 1.</p>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <img src="Blog Image/img1.jpg" alt="Blog 2">
+                    <div class="blog-content">
+                        <h3 class="blog-title">Blog Post 2</h3>
+                        <p class="blog-excerpt">This is a short description or excerpt for blog post 2.</p>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <img src="Blog Image/img2.jpg" alt="Blog 3">
+                    <div class="blog-content">
+                        <h3 class="blog-title">Blog Post 3</h3>
+                        <p class="blog-excerpt">This is a short description or excerpt for blog post 3.</p>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <img src="Blog Image/img3.jpg" alt="Blog 4">
+                    <div class="blog-content">
+                        <h3 class="blog-title">Blog Post 4</h3>
+                        <p class="blog-excerpt">This is a short description or excerpt for blog post 4.</p>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <img src="Blog Image/img4.jpg" alt="Blog 5">
+                    <div class="blog-content">
+                        <h3 class="blog-title">Blog Post 5</h3>
+                        <p class="blog-excerpt">This is a short description or excerpt for blog post 5.</p>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <img src="Blog Image/img5.jpg" alt="Blog 6">
+                    <div class="blog-content">
+                        <h3 class="blog-title">Blog Post 6</h3>
+                        <p class="blog-excerpt">This is a short description or excerpt for blog post 6.</p>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <img src="Blog Image/img6.jpg" alt="Blog 4">
+                    <div class="blog-content">
+                        <h3 class="blog-title">Blog Post 4</h3>
+                        <p class="blog-excerpt">This is a short description or excerpt for blog post 4.</p>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <img src="Blog Image/img7.jpg" alt="Blog 5">
+                    <div class="blog-content">
+                        <h3 class="blog-title">Blog Post 5</h3>
+                        <p class="blog-excerpt">This is a short description or excerpt for blog post 5.</p>
+                    </div>
+                </div>
+                <div class="blog-box">
+                    <img src="Blog Image/img8.jpg" alt="Blog 6">
+                    <div class="blog-content">
+                        <h3 class="blog-title">Blog Post 6</h3>
+                        <p class="blog-excerpt">This is a short description or excerpt for blog post 6.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="blog-box">
-            <img src="Blog Image/img2.jpg" alt="Blog 2">
-            <div class="blog-content">
-                <h3>Blog Title 2</h3>
-                <p>Short description of the blog post...</p>
-            </div>
-        </div>
-        <div class="blog-box">
-            <img src="Blog Image/img3.jpg" alt="Blog 3">
-            <div class="blog-content">
-                <h3>Blog Title 3</h3>
-                <p>Short description of the blog post...</p>
-            </div>
-        </div>
-        <div class="blog-box">
-            <img src="Blog Image/img4.jpg" alt="Blog 4">
-            <div class="blog-content">
-                <h3>Blog Title 4</h3>
-                <p>Short description of the blog post...</p>
-            </div>
-        </div>
-        <div class="blog-box">
-            <img src="Blog Image/img5.jpg" alt="Blog 5">
-            <div class="blog-content">
-                <h3>Blog Title 5</h3>
-                <p>Short description of the blog post...</p>
-            </div>
-        </div>
-        <div class="blog-box">
-            <img src="Blog Image/img6.jpg" alt="Blog 6">
-            <div class="blog-content">
-                <h3>Blog Title 6</h3>
-                <p>Short description of the blog post...</p>
-            </div>
-        </div>
-        <div class="blog-box">
-            <img src="Blog Image/img7.jpg" alt="Blog 6">
-            <div class="blog-content">
-                <h3>Blog Title 7</h3>
-                <p>Short description of the blog post...</p>
-            </div>
-        </div>
-        <div class="blog-box">
-            <img src="Blog Image/img8.jpg" alt="Blog 6">
-            <div class="blog-content">
-                <h3>Blog Title 8</h3>
-                <p>Short description of the blog post...</p>
-            </div>
-        </div>
-        <div class="blog-box">
-            <img src="Blog Image/img9.jpg" alt="Blog 9">
-            <div class="blog-content">
-                <h3>Blog Title 9</h3>
-                <p>Short description of the blog post...</p>
-            </div>
-        </div>
-    </div>
-</div>
+        </section>
 </body>
 <?php include "footer.php"; ?>
 </html>
