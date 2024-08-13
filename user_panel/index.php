@@ -34,7 +34,7 @@
             align-items: center;
             justify-content: space-between;
             max-width: 1200px;
-            margin: 90px auto;
+            margin: 50px 80px;
             padding: 60px;
             background: #fff;
             border-radius: 10px;
@@ -134,16 +134,16 @@
             display: flex;
             justify-content: center; /* Center the cards horizontally */
             flex-wrap: wrap; /* Allow cards to wrap onto the next line if needed */
-            gap: 20px; /* Add space between the cards */
-            padding: 20px; /* Add some padding around the container */
+            gap: 10px; /* Add space between the cards */
+            padding: 33px; /* Add some padding around the container */
         }
 
         .card {
             display: block;
             position: relative;
             flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis for responsive design */
-            max-width: 300px; /* Ensure cards do not exceed 300px */
-            max-height: 320px;
+            max-width: 320px; /* Ensure cards do not exceed 300px */
+            max-height: 350px;
             background-color: #f2f8f9;
             border-radius: 10px;
             padding: 2em 1.2em;
@@ -336,10 +336,64 @@
             font-size: 1rem;
             line-height: 1.4;
         }
+        .blog-excerpt:hover a{
+            cursor: pointer;
+        }
+        
+        /* Style for About me starts here*/
+        .card-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        }
+
+       .card {
+       width: 300px;
+       height: auto; /* Adjusted for dynamic height */
+       position: relative;
+       }
+
+       .card-content {
+       position: relative;
+       border-radius: 10px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+       padding: 20px;
+       color:gray;
+       background-color: #ffffff;
+       }
+
+       .card-back {
+       color: white;
+       margin-top: 20px;
+       }
+
+      .card:hover .card-content {
+      transform: scale(1.05); /* Optional: adds a subtle hover effect */
+      }
+
+
 
     </style>
 </head>
 <body>
+<h2 style="
+    text-align: left; 
+    font-size: 3em; 
+    margin-bottom: 10px; 
+    margin: 0 76px;
+    margin-top: 100px;
+    -webkit-background-clip: text;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    color: #333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 3px;
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+">
+    WEL COME TO MY PERSONAL SPACE..!
+</h2>
 <section>
     <div class="header-container">
         <div class="header-content">
@@ -356,7 +410,25 @@
 
 </section>
 <!-- Second section begins here -->
-<h1 class="section-title">Let's Walk through our Ideas</h1>
+<h2 style="
+    text-align: center; 
+    font-size: 3em; 
+    margin-bottom: 40px; 
+    margin: 0 70px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 3px;
+    border: 2px solid #ff7e5f;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+">
+    LET'S WALK THROUGH OUR IDEA'S..!
+</h2>
+
 
 <div class="card-container">
     <div class="card">
@@ -375,7 +447,8 @@
         </p>
         <div class="go-corner">
             <div class="go-arrow">→</div>
-        </div>
+    </div>
+        
     </div>
     <div class="card">
         <p class="card-title">Portfolio</p>
@@ -386,31 +459,50 @@
             <div class="go-arrow">→</div>
         </div>
     </div>
+    
   </div>
 
  <!-- Blog Preview Section -->
  <section class="blog-preview-section">
-            <h2 class="section-title">Latest Blogs</h2>
+ <h2 style="
+    text-align: center; 
+    font-size: 3em; 
+    margin-bottom: 40px; 
+    margin: 0 70px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 3px;
+    border: 2px solid #ff7e5f;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+">
+    LATEST BLOGS YOU MIGHT LIKE..!
+</h2>
             <div class="blog-container">
                 <div class="blog-box">
                     <img src="Blog Image/img9.jpg" alt="Blog 1">
                     <div class="blog-content">
                         <h3 class="blog-title">Blog Post 1</h3>
-                        <p class="blog-excerpt">This is a short description or excerpt for blog post 1.</p>
+                        <p class="blog-excerpt">Can AI Really Save the Planet? Let's Discuss About it&nbsp;&nbsp;<a href="https://rahulmirji444.blogspot.com/2024/08/can-ai-really-save-planet.html"style="color: red;" target="_blank";>click here</a></p>
+
                     </div>
                 </div>
                 <div class="blog-box">
                     <img src="Blog Image/img1.jpg" alt="Blog 2">
                     <div class="blog-content">
                         <h3 class="blog-title">Blog Post 2</h3>
-                        <p class="blog-excerpt">This is a short description or excerpt for blog post 2.</p>
+                        <p class="blog-excerpt">Google's AI Advances in Math: A New Era of Problem Solving&nbsp;&nbsp;<a href="https://rahulmirji444.blogspot.com/2024/08/googles-ai-advances-in-math-new-era-of.html"style="color: red;" target="_blank";>click here</a></p>
                     </div>
                 </div>
                 <div class="blog-box">
                     <img src="Blog Image/img2.jpg" alt="Blog 3">
                     <div class="blog-content">
                         <h3 class="blog-title">Blog Post 3</h3>
-                        <p class="blog-excerpt">This is a short description or excerpt for blog post 3.</p>
+                        <p class="blog-excerpt">Introduction to Artificial Intelligence for Beginners&nbsp;&nbsp;<a href="https://rahulmirji444.blogspot.com/2024/08/introduction-to-artificial-intelligence.html"style="color: red;" target="_blank";>click here</a></p>
                     </div>
                 </div>
                 <div class="blog-box">
@@ -457,6 +549,64 @@
                 </div>
             </div>
         </section>
+<!-- The code for About me starts here -->
+<section id="about-me">
+<h2 style="
+    text-align: center; 
+    font-size: 3em; 
+    margin-bottom: 30px; 
+    margin: 0 70px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 3px;
+    border: 2px solid #ff7e5f;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+">
+    About Me
+</h2>
+
+
+
+    <div class="card-container">
+        <div class="card">
+            <div class="card-content">
+                <h3>Education</h3>
+                <p>Brief overview of your education.</p>
+            </div>
+            <div class="card-back">
+                <h3>Education Details</h3>
+                <p>Detailed information about your education background, courses, and achievements.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>Skills</h3>
+                <p>Brief overview of your skills.</p>
+            </div>
+            <div class="card-back">
+                <h3>Skills Details</h3>
+                <p>List of skills with proficiency levels, tools you use, and related experiences.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>Interests</h3>
+                <p>Brief overview of your interests.</p>
+            </div>
+            <div class="card-back">
+                <h3>Interests Details</h3>
+                <p>Information about your hobbies, passions, and what you enjoy doing in your free time.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 </body>
 <?php include "footer.php"; ?>
 </html>
