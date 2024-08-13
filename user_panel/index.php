@@ -14,6 +14,13 @@
             padding: 0;
             box-sizing: border-box;
         }
+        .body-margin {
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -34,7 +41,8 @@
             align-items: center;
             justify-content: space-between;
             max-width: 1200px;
-            margin: 50px 80px;
+            margin: 50px 120px;
+            margin-bottom: 80px;
             padding: 60px;
             background: #fff;
             border-radius: 10px;
@@ -134,6 +142,7 @@
             display: flex;
             justify-content: center; /* Center the cards horizontally */
             flex-wrap: wrap; /* Allow cards to wrap onto the next line if needed */
+            grid-template-columns: repeat(3, 1fr);
             gap: 10px; /* Add space between the cards */
             padding: 33px; /* Add some padding around the container */
         }
@@ -284,7 +293,8 @@
             grid-gap: 20px; /* Space between grid items */
             justify-content: center;
             padding: 40px 40px;
-            margin: 0 40px;
+            margin: 30px 40px;
+            margin-left: 80px;
         }
 
         .blog-box {
@@ -345,6 +355,7 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
+        margin: 30px;
         gap: 20px;
         }
 
@@ -377,18 +388,19 @@
     </style>
 </head>
 <body>
+    <div class="body-margin">
 <h2 style="
     text-align: left; 
     font-size: 3em; 
     margin-bottom: 10px; 
-    margin: 0 76px;
+    margin: 0 130px;
     margin-top: 100px;
     -webkit-background-clip: text;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     color: #333;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     letter-spacing: 3px;
-    padding: 30px;
+    padding: 30px 60px;
     border-radius: 10px;
     transition: transform 0.3s ease;
 ">
@@ -413,8 +425,8 @@
 <h2 style="
     text-align: center; 
     font-size: 3em; 
-    margin-bottom: 40px; 
-    margin: 0 70px;
+    margin-bottom: 140px; 
+    margin: 40px 120px;
     background: linear-gradient(to right, #ff7e5f, #feb47b);
     -webkit-background-clip: text;
     color: transparent;
@@ -459,7 +471,34 @@
             <div class="go-arrow">→</div>
         </div>
     </div>
-    
+    <div class="card">
+    <p class="card-title">Creative Solutions</p>
+    <p class="small-desc">
+        I specialize in crafting innovative web solutions that cater to diverse business needs. Whether it's through sleek, user-friendly designs or powerful backend systems, my focus is on delivering websites that shine in both creativity and performance. I strive to create digital experiences that make a lasting impression.
+    </p>
+    <div class="go-corner">
+        <div class="go-arrow">→</div>
+    </div>
+</div>
+<div class="card">
+    <p class="card-title">Technology Expertise</p>
+    <p class="small-desc">
+        My skill set includes a range of modern technologies such as HTML, CSS, and JavaScript, along with advanced frameworks like React. I also handle backend development using Node.js and Python, ensuring that my technology stack remains current and capable of delivering efficient, scalable solutions.
+    </p>
+    <div class="go-corner">
+        <div class="go-arrow">→</div>
+    </div>
+</div>
+<div class="card">
+    <p class="card-title">Showcase</p>
+    <p class="small-desc">
+        My portfolio showcases a variety of projects, from responsive websites to intricate applications. Each project highlights my dedication to quality, creativity, and technical proficiency. Explore my work to see how I transform concepts into impactful web solutions through effective design and development.
+    </p>
+    <div class="go-corner">
+        <div class="go-arrow">→</div>
+    </div>
+</div>
+
   </div>
 
  <!-- Blog Preview Section -->
@@ -468,7 +507,8 @@
     text-align: center; 
     font-size: 3em; 
     margin-bottom: 40px; 
-    margin: 0 70px;
+    margin: 0 110px;
+    margin-right: 130px;
     background: linear-gradient(to right, #ff7e5f, #feb47b);
     -webkit-background-clip: text;
     color: transparent;
@@ -555,7 +595,7 @@
     text-align: center; 
     font-size: 3em; 
     margin-bottom: 30px; 
-    margin: 0 70px;
+    margin: 0 110px;
     background: linear-gradient(to right, #ff7e5f, #feb47b);
     -webkit-background-clip: text;
     color: transparent;
@@ -572,41 +612,43 @@
 
 
 
-    <div class="card-container">
-        <div class="card">
-            <div class="card-content">
-                <h3>Education</h3>
-                <p>Brief overview of your education.</p>
-            </div>
-            <div class="card-back">
-                <h3>Education Details</h3>
-                <p>Detailed information about your education background, courses, and achievements.</p>
-            </div>
+<div class="card-container">
+    <div class="card">
+        <div class="card-content">
+            <h3>Education</h3>
+            <p>Overview of my academic background in AIML.</p>
         </div>
-        <div class="card">
-            <div class="card-content">
-                <h3>Skills</h3>
-                <p>Brief overview of your skills.</p>
-            </div>
-            <div class="card-back">
-                <h3>Skills Details</h3>
-                <p>List of skills with proficiency levels, tools you use, and related experiences.</p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-content">
-                <h3>Interests</h3>
-                <p>Brief overview of your interests.</p>
-            </div>
-            <div class="card-back">
-                <h3>Interests Details</h3>
-                <p>Information about your hobbies, passions, and what you enjoy doing in your free time.</p>
-            </div>
+        <div class="card-back">
+            <h3>Education Details</h3>
+            <p>Detailed overview of my AIML studies, covering key courses, projects, and academic milestones achieved during my BE program at HKBK College of Engineering.</p>
+
         </div>
     </div>
+    <div class="card">
+        <div class="card-content">
+            <h3>Skills</h3>
+            <p>Summary of my technical skills and expertise.</p>
+        </div>
+        <div class="card-back">
+            <h3>Skills Details</h3>
+            <p>Comprehensive list of your skills in web development, AI/ML technologies, and your gaming expertise. Includes tools and techniques you're proficient in.</p>
+
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <h3>Interests</h3>
+            <p>Brief insight into my hobbies and passions.</p>
+        </div>
+        <div class="card-back">
+            <h3>Interests Details</h3>
+            <p>Explore your interests in gaming, content creation, and working on exciting new projects. Includes your passion for playing Free Fire and creating engaging content.</p>
+
+        </div>
+    </div>
+</div>
 </section>
-
-
+</div>
 </body>
 <?php include "footer.php"; ?>
 </html>
