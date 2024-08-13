@@ -144,7 +144,8 @@
             flex-wrap: wrap; /* Allow cards to wrap onto the next line if needed */
             grid-template-columns: repeat(3, 1fr);
             gap: 10px; /* Add space between the cards */
-            padding: 33px; /* Add some padding around the container */
+            padding: 20px 60px; /* Add some padding around the container */
+            margin-right:220px;
         }
 
         .card {
@@ -595,7 +596,7 @@
     text-align: center; 
     font-size: 3em; 
     margin-bottom: 30px; 
-    margin: 0 110px;
+    margin: 0 130px;
     background: linear-gradient(to right, #ff7e5f, #feb47b);
     -webkit-background-clip: text;
     color: transparent;
