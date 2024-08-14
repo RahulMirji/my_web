@@ -350,7 +350,7 @@
         .blog-excerpt:hover a{
             cursor: pointer;
         }
-        
+
         /* Style for About me starts here*/
         .card-container {
         display: flex;
@@ -376,24 +376,147 @@
        }
 
        .card-back {
-       color: white;
+       color: black;
        margin-top: 20px;
+       }
+       .card-back:hover {
+       color: white;
        }
 
       .card:hover .card-content {
       transform: scale(1.05); /* Optional: adds a subtle hover effect */
       }
+    /* Style for Machine learnign model starts here*/
+    #ml-simulator {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+#ml-simulator h2 {
+    color: #4CAF50;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+}
+
+#ml-simulator label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+}
+
+#ml-simulator button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#ml-simulator button:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #4CAF50;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+/* Feedback Form Scoped Styles */
+#feedback-form {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px solid #2196F3;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+#feedback-form h2 {
+    color: #2196F3;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+}
+
+#feedback-form .input-group {
+    margin-bottom: 15px;
+}
+
+#feedback-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+#feedback-form input,
+#feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+}
+
+#feedback-form textarea {
+    resize: vertical;
+}
+
+#feedback-form button {
+    padding: 10px 20px;
+    background-color: #2196F3;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#feedback-form button:hover {
+    background-color: #1976D2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
 
 
-    </style>
+</style>
 </head>
 <body>
     <div class="body-margin">
 <h2 style="
-    text-align: left; 
-    font-size: 3em; 
-    margin-bottom: 10px; 
+    text-align: left;
+    font-size: 3em;
+    margin-bottom: 10px;
     margin: 0 130px;
     margin-top: 100px;
     -webkit-background-clip: text;
@@ -424,9 +547,9 @@
 </section>
 <!-- Second section begins here -->
 <h2 style="
-    text-align: center; 
-    font-size: 3em; 
-    margin-bottom: 140px; 
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 140px;
     margin: 40px 120px;
     background: linear-gradient(to right, #ff7e5f, #feb47b);
     -webkit-background-clip: text;
@@ -461,7 +584,7 @@
         <div class="go-corner">
             <div class="go-arrow">→</div>
     </div>
-        
+
     </div>
     <div class="card">
         <p class="card-title">Portfolio</p>
@@ -505,9 +628,9 @@
  <!-- Blog Preview Section -->
  <section class="blog-preview-section">
  <h2 style="
-    text-align: center; 
-    font-size: 3em; 
-    margin-bottom: 40px; 
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 40px;
     margin: 0 110px;
     margin-right: 130px;
     background: linear-gradient(to right, #ff7e5f, #feb47b);
@@ -593,9 +716,9 @@
 <!-- The code for About me starts here -->
 <section id="about-me">
 <h2 style="
-    text-align: center; 
-    font-size: 3em; 
-    margin-bottom: 30px; 
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 30px;
     margin: 0 130px;
     background: linear-gradient(to right, #ff7e5f, #feb47b);
     -webkit-background-clip: text;
@@ -650,6 +773,134 @@
 </div>
 </section>
 </div>
+<!-- Machine Learning Simulator Starts here -->
+<section>
+<h2 style="
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 30px;
+    margin: 50px 130px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 3px;
+    border: 2px solid #ff7e5f;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+">
+    Let's Play a game..!
+</h2>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+<div id="ml-simulator">
+    <h2>Machine Learning Simulator</h2>
+    <div class="input-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="Enter age">
+    </div>
+    <div class="input-group">
+        <label for="income">Income:</label>
+        <input type="number" id="income" name="income" placeholder="Enter income">
+    </div>
+    <button onclick="runModel()">Predict</button>
+    <div id="result"></div>
+</div>
+
+<!-- Stepping up the Tensor flow model-->
+<script>
+    // Define a simple sequential model
+    const model = tf.sequential();
+
+    // Add a single hidden layer
+    model.add(tf.layers.dense({ units: 1, inputShape: [2], activation: 'sigmoid' }));
+
+    // Compile the model with an optimizer and loss function
+    model.compile({ optimizer: 'sgd', loss: 'binaryCrossentropy', metrics: ['accuracy'] });
+
+    // Prepare the training data (age, income) and labels (0 = Won't Buy, 1 = Will Buy)
+    const xs = tf.tensor2d([
+        [25, 50000],
+        [45, 60000],
+        [30, 80000],
+        [35, 120000],
+        [40, 150000]
+    ]);
+    const ys = tf.tensor2d([
+        [0], [1], [0], [1], [1]
+    ]);
+
+    // Train the model
+    model.fit(xs, ys, { epochs: 50 }).then(() => {
+        console.log('Model trained!');
+    });
+
+    // Function to run the model prediction
+    function runModel() {
+        const age = parseInt(document.getElementById('age').value);
+        const income = parseInt(document.getElementById('income').value);
+        const inputTensor = tf.tensor2d([[age, income]]);
+
+        // Make a prediction and display the result
+        const prediction = model.predict(inputTensor);
+        prediction.array().then((data) => {
+            const result = data[0][0] > 0.5 ? 'Will Buy' : 'Won\'t Buy';
+            document.getElementById('result').innerText = `Prediction: ${result}`;
+        });
+    }
+</script>
+</section>
+<!-- Feedback form Starts here -->
+<?php
+// Database connection details
+include('../db.php');
+if (isset($_POST['send']))
+{
+    // Retrieve form data and sanitize it
+    $name = mysqli_real_escape_string($conn, $_POST['name']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $feedback = mysqli_real_escape_string($conn, $_POST['feedback']);
+
+    // SQL query to insert data into the table
+    $sql = "INSERT INTO feedback(name, email, feedback) VALUES ('$name', '$email', '$feedback')";
+
+    $insert_result = mysqli_query($conn, $sql);
+    // Execute the query and check for success
+    if ($insert_result) {
+        // If the insertion was successful, show the alert
+        echo '<script>alert("Thank You for your feedback!");</script>';
+    } else {
+        // If there was an error in the query, show a different alert
+        echo '<script>alert("Something went wrong. Please Try Again.");</script>';
+    }
+}
+?>
+
+<section>
+<div id="feedback-form">
+    <h2>Feedback Form</h2>
+    <form id="feedback" method="post">
+        <div class="input-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="input-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="input-group">
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Your Feedback" required></textarea>
+        </div>
+        <button type="submit" name="send">Submit Feedback</button>
+
+    </form>
+</div>
+</section>
+
+
 </body>
 <?php include "footer.php"; ?>
 </html>
