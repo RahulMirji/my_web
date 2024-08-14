@@ -806,6 +806,7 @@ input {
         <input type="number" id="income" name="income" placeholder="Enter income">
     </div>
     <button onclick="runModel()">Predict</button>
+    <button onclick="resetModel()">Reset</button>
     <div id="result"></div>
 </div>
 
@@ -842,7 +843,7 @@ input {
         const age = parseInt(document.getElementById('age').value);
         const income = parseInt(document.getElementById('income').value);
         const inputTensor = tf.tensor2d([[age, income]]);
-
+    
         // Make a prediction and display the result
         const prediction = model.predict(inputTensor);
         prediction.array().then((data) => {
@@ -850,6 +851,14 @@ input {
             document.getElementById('result').innerText = `Prediction: ${result}`;
         });
     }
+    function resetModel() {
+    // Clear the input fields
+    document.getElementById('age').value = '';
+    document.getElementById('income').value = '';
+    
+    // Clear the result
+    document.getElementById('result').innerText = '';
+}
 </script>
 </section>
 <!-- Feedback form Starts here -->
