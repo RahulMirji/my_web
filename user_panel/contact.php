@@ -22,6 +22,7 @@ if (isset($_POST['send'])) {
     }
 }
 ?>
+<!-- Html code begins here-->
 
 <!DOCTYPE html>
 <html lang="en">
