@@ -13,7 +13,7 @@
             box-sizing: border-box;
         }
 
-        /* Body and Container */
+        /* Body and Container full */
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
