@@ -863,7 +863,7 @@ input {
 </section>
 <!-- Feedback form Starts here -->
 <?php
-// Database connection details
+// Database connection details starts here
 include('../db.php');
 if (isset($_POST['send']))
 {
