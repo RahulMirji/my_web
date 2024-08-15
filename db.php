@@ -1,5 +1,5 @@
 <?php
-	// db connection management
+	// db connection
 	$conn = new mysqli('localhost', 'root', '', 'my_portfolio');
 
 	if(!$conn)
