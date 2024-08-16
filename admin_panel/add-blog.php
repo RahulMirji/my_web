@@ -44,7 +44,7 @@ if (isset($_POST['submit'])) {
                 <label for="content">Content:</label>
                 <textarea name="content" id="content" rows="10" required></textarea>
             </div>
-            <button type="submit" name="submit" class="btn">Add Blog Post</button>
+            <button type="submit" name="submi" class="btn">Add Blog Post</button>
         </form>
     </div>
 </body>
