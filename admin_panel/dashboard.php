@@ -17,7 +17,7 @@ include('../db.php'); // Include database connection
     <link rel="stylesheet" href="admin-styles.css">
     <?php include('nav.php'); ?>
 <style>
-    /* Dashboard Container fist */
+    /* Dashboard Container */
     .dashboard-container {
     max-width: 1200px;
     margin: 110px auto;
