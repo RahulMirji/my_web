@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
     <?php include('nav.php'); ?>
 
     <div class="container">
-        <h1>Add New Blog</h1>
+        <h1>Add New Blog Post</h1>
         <form action="" method="post">
             <div class="form-group">
                 <label for="title">Title:</label>
