@@ -120,7 +120,7 @@
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 ">
-    LATEST BLOGS YOU MIGHT LI
+    LATEST BLOGS YOU MIGHT LIKE..!
 </h2>
             <div class="blog-container">
                 <div class="blog-box">
