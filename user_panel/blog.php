@@ -6,7 +6,7 @@
     <title>blog-post</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-     /* The Styles for blog section starts hee */
+     /* The Styles for blog section starts here */
      .blog-preview-section {
             padding: 50px 0;
             background-color: #f9f9f9;
