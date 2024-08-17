@@ -17,7 +17,7 @@ if (isset($_POST['send'])) {
         // If the insertion was successful, show the alert
         echo '<script>alert("We will catch you very soon. Thank You...!!");</script>';
     } else {
-        // If there was an error in the query, show a different alert
+        // If there was an error in the query, show a different
         echo '<script>alert("Something went wrong. Please Try Again.");</script>';
     }
 }
