@@ -101,7 +101,7 @@
     <?php 
     include 'nav.php';
     ?>
- <!-- Blog Preview Section 
+ <!-- Blog Preview Section -->
  <section class="blog-preview-section">
  <h2 style="
     text-align: center; 
