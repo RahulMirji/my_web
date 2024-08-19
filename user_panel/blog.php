@@ -89,7 +89,7 @@
     text-decoration: none;
     color: #fff;
     padding: 10px 20px;
-    background-c: #333;
+    background-color: #333;
     border-radius: 5px;
     transition: background-color 0.3s ease;
     margin-bottom: 30px; 
