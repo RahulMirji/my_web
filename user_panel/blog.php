@@ -118,7 +118,7 @@
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition:  0.3s ease;
 ">
     LATEST BLOGS YOU MIGHT LIKE..!
 </h2>
