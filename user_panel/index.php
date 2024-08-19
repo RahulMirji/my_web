@@ -325,7 +325,7 @@
             transform: scale(1.1);
         }
 
-        .blog-c {
+        .blog-content {
             position: absolute;
             bottom: 0;
             left: 0;
