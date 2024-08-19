@@ -89,9 +89,9 @@
     text-decoration: none;
     color: #fff;
     padding: 10px 20px;
-    background-color: #333;
+    background-c: #333;
     border-radius: 5px;
-    transition:  0.3s ease;
+    transition: background-color 0.3s ease;
     margin-bottom: 30px; 
 }
 
