@@ -91,7 +91,7 @@
     padding: 10px 20px;
     background-color: #333;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition:  0.3s ease;
     margin-bottom: 30px; 
 }
 
@@ -118,7 +118,7 @@
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    transition:  0.3s ease;
+    transition: transform 0.3s ease;
 ">
     LATEST BLOGS YOU MIGHT LIKE..!
 </h2>
