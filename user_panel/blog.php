@@ -55,7 +55,7 @@
             box-shadow: 5px 7px 25px black;
         }
 
-        .blog-box:hover  {
+        .blog-box:hover img {
             transform: scale(1.1);
         }
 
