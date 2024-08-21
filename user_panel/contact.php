@@ -14,7 +14,7 @@ if (isset($_POST['send'])) {
     $insert_result = mysqli_query($conn, $insert_query);
 
     if ($insert_result) {
-        // If the insertion was successful, show the alert
+        // If the insertion was successful, show the 
         echo '<script>alert("We will catch you very soon. Thank You...!!");</script>';
     } else {
         // If there was an error in the query, show a different alert
