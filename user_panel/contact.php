@@ -37,7 +37,7 @@ if (isset($_POST['send'])) {
     <style>
         /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, san
     line-height: 1.6;
     margin: 0;
     padding: 0;
