@@ -10,7 +10,7 @@ if (isset($_POST['send'])) {
     // Insert data into the database
     $insert_query = "INSERT INTO contact_me (name, email, message) VALUES ('$first_name', '$user_email', '$message')";
 
-    // Execute the query
+    // Execute the 
     $insert_result = mysqli_query($conn, $insert_query);
 
     if ($insert_result) {
