@@ -109,7 +109,7 @@
         }
 
         .back-home-container {
-            margin: 40px 0; /* Added margin for top and bottom gap */
+            margin: 40px 0; /* Added margin for top and bottom ga
             text-align: center;
         }
 
