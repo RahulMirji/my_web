@@ -72,7 +72,7 @@
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            margin-bottom: 40px; /* Added margin-
+            margin-bottom: 40px; /* Added margin-bottom */
         }
 
         .team-member {
