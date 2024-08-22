@@ -1,5 +1,5 @@
 <?php
-include('../db.php'); // Ensure this file connects to your database correct
+include('../db.php'); // Ensure this file connects to your database 
 
 if (isset($_POST['send'])) {
     // Declare all variables
