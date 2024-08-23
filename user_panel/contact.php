@@ -35,7 +35,7 @@ if (isset($_POST['send'])) {
     ?>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* General Styl
+        /* General Style
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
