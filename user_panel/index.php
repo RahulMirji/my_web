@@ -529,7 +529,7 @@ input {
 </style>
 </head>
 <body>
-    <div class="body-margin"
+    <div class="body-margin">
 <h2 style="
     text-align: left;
     font-size: 3em;
