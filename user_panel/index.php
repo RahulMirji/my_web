@@ -908,6 +908,7 @@ if (isset($_POST['send']))
     </form>
 </div>
 </section>
+<!-- Quote section starts here -->
 <section id="daily-quote" class="quote-section">
     <h2>Quote of the Day</h2>
     <p id="quote-text"></p>
