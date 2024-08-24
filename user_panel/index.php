@@ -506,6 +506,30 @@ input {
     background-color: #1976D2;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.quote-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 2px solid #e0e0e0;
+    margin-top: 40px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.quote-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.quote-section p {
+    font-size: 20px;
+    color: #555;
+    font-style: italic;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
 
 
