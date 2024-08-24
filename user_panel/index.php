@@ -537,7 +537,7 @@ input {
     margin: 0 130px;
     margin-top: 100px;
     -webkit-background-clip: text;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3)
     color: #333;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     letter-spacing: 3px;
