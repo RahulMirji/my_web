@@ -506,18 +506,19 @@ input {
     background-color: #1976D2;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+/* the styles for quote begains here*/
 .quote-section {
     text-align: center;
     padding: 20px;
     background-color: #f9f9f9;
     border-top: 2px solid #e0e0e0;
     margin-top: 40px;
-    animation: fadeIn 2s ease-in-out;
 }
 
 .quote-section h2 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+    color: black;
 }
 
 .quote-section p {
@@ -525,14 +526,6 @@ input {
     color: #555;
     font-style: italic;
 }
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-
-
 </style>
 </head>
 <body>
@@ -937,6 +930,26 @@ if (isset($_POST['send']))
     <h2>Quote of the Day</h2>
     <p id="quote-text"></p>
 </section>
+<script>
+const quotes = [
+    "The best way to predict the future is to create it.",
+    "Do one thing every day that scares you.",
+    "Your limitation—it’s only your imagination.",
+    "Great things never come from comfort zones.",
+    "Dream it. Wish it. Do it.",
+    "Success doesn’t just find you. You have to go out and get it.",
+    "The harder you work for something, the greater you’ll feel when you achieve it."
+];
+
+const quoteText = document.getElementById("quote-text");
+
+// Get the current day of the year (0-364/365)
+const currentDay = new Date().getDay();
+
+// Display the quote based on the day of the year
+quoteText.textContent = quotes[currentDay % quotes.length];
+</script>
+
 
 
 
