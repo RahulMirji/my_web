@@ -384,7 +384,7 @@
        }
 
       .card:hover .card-content {
-      transform: scale(1.05); /* Optional: adds a subtle hover effect */
+      transform: scale(1.05); /* Optional: adds a subtle hover effect *
       }
     /* Style for Machine learnign model starts here*/
     #ml-simulator {
