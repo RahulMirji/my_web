@@ -34,7 +34,7 @@
 
         .blog-box {
             position: relative;
-            width: 85%; /* Ensure boxes take full width of 
+            width: 85%; /* Ensure boxes take full width of their grid cell */
             height: 200px;
             background-color: #fff;
             overflow: hidden;
