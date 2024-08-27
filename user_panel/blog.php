@@ -6,7 +6,7 @@
     <title>blog-post</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-     /* The Styles for blog section starts here */
+     /* The Styles for blog section starts here*/
      .blog-preview-section {
             padding: 50px 0;
             background-color: #f9f9f9;
@@ -18,7 +18,7 @@
             font-weight: bold;
             margin-bottom: 40px;
             color: #333;
-            text-transform: uppercase;
+            text-transform: upperc
             letter-spacing: 0.05em;
         }
 
