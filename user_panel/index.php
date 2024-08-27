@@ -441,7 +441,7 @@ input {
 }
 
 #result {
-    margin-top: 20px;
+    margin-top: 20px
     font-size: 1.2em;
     color: #4CAF50;
     font-weight: bold;
