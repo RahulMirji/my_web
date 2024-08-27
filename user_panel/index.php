@@ -473,7 +473,7 @@ input {
     display: block;
     margin-bottom: 5px;
     color: #333;
-    font-weight: bold;
+    font-weight: bold
 }
 
 #feedback-form input,
