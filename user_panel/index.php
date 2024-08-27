@@ -462,7 +462,7 @@ input {
 #feedback-form h2 {
     color: #2196F3;
     font-family: 'Arial', sans-serif;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 #feedback-form .input-group {
